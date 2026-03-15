@@ -5,5 +5,11 @@
   "cordova": {
     "id": "cordova-plugin-overlaydetection",
     "platforms": ["android"]
-  }
+  },
+  "keywords": [
+    "cordova",
+    "overlay",
+    "security",
+    "android"
+  ]
 }
