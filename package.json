@@ -1,0 +1,9 @@
+{
+  "name": "cordova-plugin-overlaydetection",
+  "version": "1.0.0",
+  "description": "Overlay detection plugin",
+  "cordova": {
+    "id": "cordova-plugin-overlaydetection",
+    "platforms": ["android"]
+  }
+}
