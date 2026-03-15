@@ -8,6 +8,11 @@
     <description>Detects screen overlay attacks</description>
     <license>MIT</license>
 
+    <!-- JS bridge -->
+    <js-module src="www/overlay.js" name="OverlayDetection">
+        <clobbers target="cordova.plugins.overlaydetection"/>
+    </js-module>
+
     <platform name="android">
 
         <config-file parent="/*" target="res/xml/config.xml">
