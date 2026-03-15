@@ -5,7 +5,7 @@
         version="1.0.0">
 
     <name>OverlayDetectionPlugin</name>
-    <description>Detects screen overlay attacks</description>
+    <description>Detects if another app is drawing over your app</description>
     <license>MIT</license>
 
     <!-- JS bridge -->
@@ -20,6 +20,11 @@
                 <param name="android-package"
                        value="com.overlay.security.OverlayDetectionPlugin"/>
             </feature>
+        </config-file>
+
+        <!-- Required permissions -->
+        <config-file parent="/*" target="AndroidManifest.xml">
+            <uses-permission android:name="android.permission.QUERY_ALL_PACKAGES"/>
         </config-file>
 
         <source-file src="src/android/OverlayDetectionPlugin.java"
